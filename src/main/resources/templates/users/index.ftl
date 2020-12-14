@@ -8,7 +8,9 @@
 </head>
 
 <body>
-	<div><a href="./create">Create new</a></div>
+	<div>
+		<a href="./create">Create new</a>
+	</div>
 	<table>
 		<thead>
 			<tr>
@@ -22,7 +24,12 @@
 			<tr>
 				<td>${item.firstname}</td>
 				<td>${item.lastname}</td>
-				<td></td>
+				<td><p>
+						<a href="./edit/${item.id}">edit</a>
+					</p>
+					<p>
+						<a href="./delete/${item.id}">delete</a>
+					</p></td>
 			</tr>
 			</#foreach>
 		</tbody>
