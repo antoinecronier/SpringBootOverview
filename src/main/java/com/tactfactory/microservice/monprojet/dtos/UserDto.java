@@ -1,29 +1,22 @@
 package com.tactfactory.microservice.monprojet.dtos;
 
+import com.tactfactory.microservice.monprojet.entities.User;
+
 public class UserDto {
 
-	private String firstname;
-	private String lastname;
+	private User user;
 
-	public String getFirstname() {
-		return firstname;
+	public User getUser() {
+		return user;
 	}
 
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
-	}
-
-	public String getLastname() {
-		return lastname;
-	}
-
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	@Override
 	public String toString() {
-		return "UserDto [firstname=" + firstname + ", lastname=" + lastname + "]";
+		return "UserDto [user=" + user + "]";
 	}
 
 }
